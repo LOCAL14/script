@@ -6,5 +6,7 @@ obj.result["svip_expired_at"] = 4096483190;
 obj.result["xy_svip_expire"] = 4096483190;
 obj.result["is_xy_vip"] = true;
 obj.result["vip_type"] = "svip";
+console.log(obj);
+console.log(JSON.stringify(obj));
 
 $done({ body: JSON.stringify(obj) });
