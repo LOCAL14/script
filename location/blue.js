@@ -25,7 +25,6 @@ try {
 		}
 		
 		console.log("特殊定位修改：成功--" + path)
-		path = 111
 	}
 
 	
