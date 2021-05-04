@@ -9,9 +9,9 @@ try {
 
 	if (path && path.search(/longitude/) > 0) {
 		
-		console.log("特殊定位修改：捕获成功--"+$request.url);
+		console.log("特殊定位修改：捕获成功--"+$request.url.substring(0,5));
 		
-		if(path.search(/\&longitude=\d+.\d+\&/) > 0){
+		if(path.search(/\&longitude=\d+.\d+\&/) > 0){ 
 			path = path.replace(/\&longitude=\d+.\d+\&/, '&longitude=' + desLot + '&')
 		}else if(path.search(/\&longitude=\d+.\d+/) > 0){
 			path = path.replace(/\&longitude=\d+.\d+/, '&longitude=' + desLot)
