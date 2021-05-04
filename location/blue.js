@@ -1,7 +1,8 @@
 //特殊定位修改 argo.blue.cn
 
+url = $request.url
+
 try {
-	const regex = ;
 	if (url && url.search(/longitude/) > 0) {
 		
 		console.log("特殊定位修改：捕获成功");
