@@ -42,6 +42,8 @@ try {
 			path = path.replace(/\&lat=\d+.\d+\&/, '&lat=30.526451110839844&')
 		}else if(path.search(/\&lat=\d+.\d+/) > 0){
 			path = path.replace(/\&lat=\d+.\d+/, '&lat=30.526451110839844')
+		}else if(path.search(/lat=\d+.\d+/) > 0){
+			path = path.replace(/lat=\d+.\d+/, 'lat=30.526451110839844')
 		}else{
 			console.log("特殊定位修改：lat修改失败");
 		}
