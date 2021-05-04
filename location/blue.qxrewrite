@@ -1,0 +1,6 @@
+#blue 修改定位
+
+^https://111\.161\.120\.154 url script-request-header https://gitee.com/local14/script/raw/master/location/blue.js
+^https://argo\.blued\.cn url script-request-header https://gitee.com/local14/script/raw/master/location/blue.js
+
+hostname = 111.161.120.154,argo.blued.cn
