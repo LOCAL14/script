@@ -16,7 +16,7 @@ try {
 			console.log("特殊定位修改：longitude修改失败");
 		}
 		
-		if(path.search(/\&latitude=\d+.\d\&/) > 0){
+		if(path.search(/\&latitude=\d+.\d+\&/) > 0){
 			path = path.replace(/\&latitude=\d+.\d+\&/, '&latitude=30.526451110839844&')
 		}else if(path.search(/\&latitude=.+/) > 0){
 			path = path.replace(/\&latitude=\d+.\d+/, '&latitude=30.526451110839844')
