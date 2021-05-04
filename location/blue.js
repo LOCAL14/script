@@ -6,6 +6,9 @@ try {
 	if (url && url.search(/longitude/) > 0) {
 		
 		console.log("特殊定位修改：捕获成功");
+		console.log("url:"+$request.url)
+		console.log("path:"+$request.path)
+		console.log("headers:"+$request.headers)
 		
 		if(url.search(/\&longitude=.+\&/) > 0){
 			url = url.replace(/\&longitude=.+\&/, '&longitude=120.69094848632812&')
