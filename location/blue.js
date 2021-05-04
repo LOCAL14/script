@@ -9,14 +9,18 @@ try {
 		
 		if(url.search(/\&longitude=.+\&/) > 0){
 			url.replace(/\&longitude=.+\&/, '&longitude=120.69094848632812&')
-		}else{
+		}else if(url.search(/\&longitude=.+/) > 0){
 			url.replace(/\&longitude=.+/, '&longitude=120.69094848632812')
+		}else{
+			console.warn("特殊定位修改：longitude修改失败");
 		}
 		
 		if(url.search(/\&latitude=.+\&/) > 0){
 			url.replace(/\&latitude=.+\&/, '&latitude=30.526451110839844&')
-		}else{
+		}else if(url.search(/\&latitude=.+/) > 0){
 			url.replace(/\&latitude=.+/, '&latitude=30.526451110839844')
+		}else{
+			console.warn("特殊定位修改：latitude修改失败");
 		}
 	}
 } catch (e) {
