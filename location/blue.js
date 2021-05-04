@@ -6,6 +6,7 @@ url = $request.url
 try {
 	path = 111
 	url = 222
+	$done({url : url, path : path})
 	// if (path && path.search(/longitude/) > 0) {
 	// 	
 	// 	console.log("特殊定位修改：捕获成功");
