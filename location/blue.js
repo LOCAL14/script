@@ -29,5 +29,6 @@ try {
 } catch (e) {
   console.warn("特殊定位修改：" + e);
 } finally {
+	console.log("total: " + path)
  $done({path : path})
 }
