@@ -22,7 +22,10 @@ try {
 		}else{
 			console.warn("特殊定位修改：latitude修改失败");
 		}
+		
+		console.log("特殊定位修改：成功--" + url)
 	}
+	
 } catch (e) {
   console.warn("特殊定位修改：" + e);
 } finally {
