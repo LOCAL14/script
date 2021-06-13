@@ -1,7 +1,7 @@
 # 建行生活修改定位
 
-^https:\/\/api\.map\.baidu\.com\/sdkproxy\/v2\/lbs_iossdk\/reverse_geocoding\/v3 url script-response-body https://gitee.com/local14/script/raw/master/CCB-Life/api-map-baidu-reserve.js
-^https:\/\/loc\.map\.baidu\.com\/sdk\.php url script-response-body https://gitee.com/local14/script/raw/master/CCB-Life/loc-map-baidu-sdk.js
-^http:\/\/pv\.sohu\.com\/cityjson\?ie\=utf-8 url script-response-body https://gitee.com/local14/script/raw/master/CCB-Life/pv-sohu.js
+^https:\/\/api\.map\.baidu\.com\/sdkproxy\/v2\/lbs_iossdk\/reverse_geocoding\/v3 url script-response-body https://raw.githubusercontent.com/LOCAL14/script/main/CCB-Life/api-map-baidu-reserve.js
+^https:\/\/loc\.map\.baidu\.com\/sdk\.php url script-response-body https://raw.githubusercontent.com/LOCAL14/script/main/CCB-Life/loc-map-baidu-sdk.js
+^http:\/\/pv\.sohu\.com\/cityjson\?ie\=utf-8 url script-response-body https://raw.githubusercontent.com/LOCAL14/script/main/CCB-Life/pv-sohu.js
 
 hostname = api.map.baidu.com,loc.map.baidu.com,pv.sohu.com
