@@ -11,7 +11,7 @@ try {
 	"show_recommended_home_ranking" : "show",
 	"product_info_source" : "salesItem",
 	"pip_show_video" : "true",
-	"is_new_ins_card" : "true ",
+	"is_new_ins_card" : "true",
 	"show_review_item_type" : "true",
 	"show_comment_detail" : "true",
 	"login_flow" : "ciam",
