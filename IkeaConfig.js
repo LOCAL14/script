@@ -8,6 +8,8 @@
 try {
   var obj = JSON.parse($response.body);
   obj = {
+	"ins_list_show_article_folders":"true",
+	"use_new_time_window_api":"true",
 	"show_recommended_home_ranking" : "show",
 	"product_info_source" : "salesItem",
 	"pip_show_video" : "true",
@@ -18,7 +20,7 @@ try {
 	"pip_product_recommendation" : "dap",
 	"show_trial_report" : "true",
 	"pip_featured_review_layout" : "true",
-	"show_event_booking" : "user",
+	"show_event_booking" : "tester",
 	"ad_pax_design" : "online-design",
 	"add_to_store_shopping_list_button" : "new",
 	"bannner_copy_test_lowerthan9" : "lowthan9p9",
@@ -27,7 +29,7 @@ try {
 	"smp_homepage_show_pax" : "tester",
 	"me_show_event_booking_entrance" : "true",
 	"friends_referral_banner" : "show",
-	"home_test_entrance" : "user",
+	"home_test_entrance" : "tester",
 	"pip_you_may_like" : "dap",
 	"pip_show_pax_local_content" : "true",
 	"pip_show_promotion_info" : "true",
