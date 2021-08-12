@@ -8,6 +8,7 @@
 try {
   var obj = JSON.parse($response.body);
   obj = {
+	"open_developer_mode":"true",
 	"ins_list_show_article_folders":"true",
 	"use_new_time_window_api":"true",
 	"show_recommended_home_ranking" : "show",
