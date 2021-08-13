@@ -10,7 +10,7 @@ try {
   obj = {
 	"app_home_show_all_ranking":"true",
 	"show_cms_more_ranking":"true",
-	"back_to_school_kv":"light",
+	"back_to_school_kv":"dark",
 	"open_developer_mode":"true",
 	"ins_list_show_article_folders":"true",
 	"use_new_time_window_api":"true",
