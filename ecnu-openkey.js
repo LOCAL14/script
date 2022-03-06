@@ -8,7 +8,19 @@ try {
   console.log("ECNU签到：Start");
   let regax = new RegExp("(?:open_key\=)(.*)")
   let path = $request.path
-  console.log(JSON.stringify(path.match(regax)[1]));
+  let secret =  {
+    "dbId": "51215902107",
+    "dbPassword": "Xz15590871361",
+    "openKey": path.match(regax)[1],
+    "unionId": "ohQfcwRbBGT7wSDuY6VpFdiaav6A",
+    "mail_host": "smtp.qq.com",
+    "mail_sender": "zachary.xia@qq.com",
+    "mail_license": "alyjecwokllubgeb",
+    "mail_receiver": "51215902107@stu.ecnu.edu.cn"
+  }
+  
+  console.log(JSON.stringify(secret));
+  $notify("ECNU签到", "Open Key补货成功", "")
 
 } catch (e) {
   console.log("[Error] ECNU签到：" + e);
