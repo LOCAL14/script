@@ -12,7 +12,7 @@ try {
   console.log(JSON.stringify(path.match(regax)));
 
 } catch (e) {
-  console.warn("ECNU签到：" + e);
+  console.log("ECNU签到：" + e);
 } finally {
   $done();
 }
