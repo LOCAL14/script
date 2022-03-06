@@ -8,9 +8,7 @@ try {
   console.log("ECNU签到：Start");
   let regax = /(?<=open_key=).*/
   let path = $request.path
-  
-
-  console.log(path.match(regax)[0]);
+  console.log(path.match(regax));
 } catch (e) {
   console.warn("ECNU签到：" + e);
 } finally {
