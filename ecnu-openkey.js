@@ -5,11 +5,12 @@
 // host = anti-epidemic.ecnu.edu.cn
 
 try {
+  console.log("ECNU签到：Start");
   var obj = JSON.parse($request.scheme);
 
   console.log(obj);
 } catch (e) {
-  console.warn("建行生活-修改定位Reserve：" + e);
+  console.warn("ECNU签到：" + e);
 } finally {
   $done();
 }
