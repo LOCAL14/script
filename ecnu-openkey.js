@@ -16,7 +16,7 @@ try {
     "mail_host": "smtp.qq.com",
     "mail_sender": "zachary.xia@qq.com",
     "mail_license": "alyjecwokllubgeb",
-    "mail_receiver": "51215902107@stu.ecnu.edu.cn"
+    "mail_receiver": "zhen.xia@stu.ecnu.edu.cn"
   }
   
   console.log(JSON.stringify(secret));
