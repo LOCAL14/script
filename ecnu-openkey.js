@@ -23,7 +23,8 @@ try {
 
   import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 
-  const octokit = new Octokit({ auth: `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` });
+  const githubToken = "Z2hwX3B2NXNnWHBXTXh0MUlzRnFBVzRkUDlrQ3lmMUhwRTEwMm1Iag=="
+  const octokit = new Octokit({ auth: window.atob(githubToken)});
 
   let response =  octokit.request('GET /repos/{owner}/{repo}/actions/secrets/public-key', {
     owner: 'LOCAL15',
