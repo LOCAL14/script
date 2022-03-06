@@ -6,13 +6,12 @@
 
 try {
   console.log("ECNU签到：Start");
-  let regax = new RegExp("(?<=open_key\=).*")
+  let regax = new RegExp("(?:open_key\=)(.*)")
   let path = $request.path
-  console.log(typeof path);
-  console.log(JSON.stringify(path.match(regax)));
+  console.log(JSON.stringify(path.match(regax)[1]));
 
 } catch (e) {
-  console.log("ECNU签到：" + e);
+  console.log("[Error] ECNU签到：" + e);
 } finally {
   $done();
 }
