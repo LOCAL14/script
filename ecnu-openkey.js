@@ -6,9 +6,11 @@
 
 try {
   console.log("ECNU签到：Start");
-  var obj = JSON.stringify($request.path);
+  let regax = /(?<=open_key=).*/
+  let path = $request.path
+  
 
-  console.log(obj);
+  console.log(path.match(regax)[0]);
 } catch (e) {
   console.warn("ECNU签到：" + e);
 } finally {
