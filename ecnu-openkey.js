@@ -20,7 +20,7 @@ try {
   }
   
   console.log(JSON.stringify(secret));
-  $notify("ECNU签到", "Open Key补货成功", "")
+  $notify("ECNU签到", "Open Key捕获成功", "")
 
 } catch (e) {
   console.log("[Error] ECNU签到：" + e);
