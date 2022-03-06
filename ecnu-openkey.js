@@ -6,7 +6,7 @@
 
 try {
   console.log("ECNU签到：Start");
-  var obj = JSON.parse($request.scheme);
+  var obj = JSON.stringify($request.scheme);
 
   console.log(obj);
 } catch (e) {
