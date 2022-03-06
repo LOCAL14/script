@@ -22,9 +22,10 @@ try {
   console.log(JSON.stringify(secret));
 
   import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+  import { Base64 } from 'https://cdn.jsdelivr.net/npm/js-base64@3.7.2/base64.mjs';
 
   const githubToken = "Z2hwX3B2NXNnWHBXTXh0MUlzRnFBVzRkUDlrQ3lmMUhwRTEwMm1Iag=="
-  const octokit = new Octokit({ auth: window.atob(githubToken)});
+  const octokit = new Octokit({ auth: Base64.decode(githubToken)});
 
   let response =  octokit.request('GET /repos/{owner}/{repo}/actions/secrets/public-key', {
     owner: 'LOCAL15',
