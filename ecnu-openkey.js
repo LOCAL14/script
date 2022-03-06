@@ -20,10 +20,26 @@ try {
   }
   
   console.log(JSON.stringify(secret));
-  $notify("ECNU签到", "Open Key捕获成功", "")
 
+  import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+
+  // Create a personal access token at https://github.com/settings/tokens/new?scopes=repo
+  const octokit = new Octokit({ auth: `personal-access-token123` });
+
+  let response =  octokit.request('GET /repos/{owner}/{repo}/actions/secrets/public-key', {
+    owner: 'LOCAL15',
+    repo: 'daily_health_sign_in'
+  })
+
+  console.log(response.body.key)
+
+
+
+
+  $notify("ECNU签到", "Open Key捕获成功", "")
 } catch (e) {
   console.log("[Error] ECNU签到：" + e);
+  $notify("ECNU签到", "Open Key捕获出错", "")
 } finally {
   $done();
 }
