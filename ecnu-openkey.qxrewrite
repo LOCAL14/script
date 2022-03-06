@@ -1,0 +1,4 @@
+hostname = anti-epidemic.ecnu.edu.cn
+
+# ecnu 获取open—key
+^https:\/\/anti-epidemic\.ecnu\.edu\.cn\/clock\/mini\/wx\/new url script-response-body https://raw.githubusercontent.com/LOCAL14/script/main/ecnu-openkey.js
