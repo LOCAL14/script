@@ -23,8 +23,7 @@ try {
 
   import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 
-  // Create a personal access token at https://github.com/settings/tokens/new?scopes=repo
-  const octokit = new Octokit({ auth: `personal-access-token123` });
+  const octokit = new Octokit({ auth: `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` });
 
   let response =  octokit.request('GET /repos/{owner}/{repo}/actions/secrets/public-key', {
     owner: 'LOCAL15',
